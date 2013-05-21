@@ -23,7 +23,7 @@ our $VERSION = '0.01';
 
     use Catmandu::Store::CouchDB;
 
-    my $store = Catmandu::Store::CouchDB->new(database_name => 'test');
+    my $store = Catmandu::Store::CouchDB->new;
 
     my $obj1 = $store->bag->add({ name => 'Patrick' });
 
@@ -44,9 +44,9 @@ our $VERSION = '0.01';
 
 =head1 METHODS
 
-=head2 new(database_name => $name)
+=head2 new(host => 'localhost', port => '5984', ...)
 
-Create a new Catmandu::Store::CouchDB store with name $name.
+Create a new Catmandu::Store::CouchDB store.
 
 =head2 bag($name)
 

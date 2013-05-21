@@ -1,8 +1,6 @@
 package Catmandu::Store::CouchDB::Bag;
 
 use Catmandu::Sane;
-use Catmandu::Util qw(:is);
-use Carp qw(confess);
 use Moo;
 
 with 'Catmandu::Bag';

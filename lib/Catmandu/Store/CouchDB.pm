@@ -42,6 +42,10 @@ our $VERSION = '0.01';
     $store->bag->each(sub { ... });
     $store->bag->take(10)->each(sub { ... });
 
+    # Or via the command line
+    cat marc.json | catmandu import JSON to CouchDB -v
+    cat marc.json | catmandu import JSON to CouchDB --bag mydatabase -v
+
 =head1 METHODS
 
 =head2 new(host => 'localhost', port => '5984', ...)
